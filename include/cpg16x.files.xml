@@ -7984,14 +7984,14 @@
 	</element>
 	<element>
 		<fullpath>sql/schema.sql</fullpath>
-		<version>1.6.05</version>
+		<version>1.6.27</version>
 		<status>mandatory</status>
 		<permission>read</permission>
 		<hash>55f6cb6847c6a5cf04dd16ee74719083</hash>
 	</element>
 	<element>
 		<fullpath>sql/update.sql</fullpath>
-		<version>1.6.05</version>
+		<version>1.6.27</version>
 		<status>mandatory</status>
 		<permission>read</permission>
 		<hash>958b31ca2d39f50c2c73fdddf577a3cb</hash>

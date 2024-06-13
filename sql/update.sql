@@ -3,12 +3,12 @@
 ##  ************************
 ##  v1.0 originally written by Gregory Demar
 ##
-##  @copyright  Copyright (c) 2003-2018 Coppermine Dev Team
+##  @copyright  Copyright (c) 2003-2024 Coppermine Dev Team
 ##  @license    GNU General Public License version 3 or later; see LICENSE
 ##
 ##  ********************************************
 ##  sql/update.sql
-##  @since  1.6.05
+##  @since  1.6.27
 ##  ********************************************
 
 # The following line has to be removed when the moderator group feature will be re-enabled!
@@ -48,3 +48,7 @@ ALTER TABLE CPG_plugins ADD `enabled` TINYINT(1) NOT NULL DEFAULT '1' AFTER `nam
 
 INSERT INTO CPG_config VALUES ('last_updates_check', '1');
 INSERT INTO CPG_config VALUES ('auto_orient_checked', '1');
+
+# Fix length of IP address storage to accommodate IPV6 addresses
+ALTER TABLE CPG_hit_stats CHANGE `ip` `ip` VARCHAR(40);
+ALTER TABLE CPG_vote_stats CHANGE `ip` `ip` VARCHAR(40);

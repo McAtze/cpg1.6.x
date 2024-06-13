@@ -3,12 +3,12 @@
 ##  ************************
 ##  v1.0 originally written by Gregory Demar
 ##
-##  @copyright  Copyright (c) 2003-2018 Coppermine Dev Team
+##  @copyright  Copyright (c) 2003-2024 Coppermine Dev Team
 ##  @license    GNU General Public License version 3 or later; see LICENSE
 ##
 ##  ********************************************
 ##  sql/schema.sql
-##  @since  1.6.05
+##  @since  1.6.27
 ##  ********************************************
 
 #
@@ -194,7 +194,7 @@ CREATE TABLE IF NOT EXISTS CPG_filetypes (
 CREATE TABLE CPG_hit_stats (
   `sid` int(11) NOT NULL auto_increment,
   `pid` varchar(100) NOT NULL default '',
-  `ip` varchar(20) NOT NULL default '',
+  `ip` varchar(40) NOT NULL default '',
   `search_phrase` varchar(255) NOT NULL default '',
   `sdate` bigint(20) NOT NULL default '0',
   `referer` text NOT NULL,
@@ -373,7 +373,7 @@ CREATE TABLE CPG_vote_stats (
   `sid` int(11) NOT NULL auto_increment,
   `pid` varchar(100) NOT NULL default '',
   `rating` smallint(6) NOT NULL default '0',
-  `ip` varchar(20) NOT NULL default '',
+  `ip` varchar(40) NOT NULL default '',
   `sdate` bigint(20) NOT NULL default '0',
   `referer` text NOT NULL,
   `browser` varchar(255) NOT NULL default '',

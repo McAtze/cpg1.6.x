@@ -7,7 +7,7 @@
  * @license    GNU General Public License version 3 or later; see LICENSE
  *
  * CHANGELOG.txt
- * @since  1.6.26
+ * @since  1.6.27
  */
 Changelog
 =========
@@ -20,6 +20,7 @@ Changelog
 [S] = Security fix (issues that are related to security)
 *********************************************
 
+2024-06-12 [M,B] Change DB IP storage fields to accommodate IPv6 addresses {ron4mac}
 2023-11-27 [B] Correct IPTC supplimental category parsing {ron4mac}
 2023-11-11 [B] Correct design/coding error in user manager {ron4mac}
 2023-04-21 [M] Prevent HTML5 upload initialization failure caused by cloudflare rocket-loader {ron4mac}
